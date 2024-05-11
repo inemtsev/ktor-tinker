@@ -14,4 +14,6 @@ fun Application.module() {
     configureHTTP()
     configureSerialization()
     configureRouting()
+    install(MeasureTimeToResponse)
+    install(FinalResponseLogger)
 }
